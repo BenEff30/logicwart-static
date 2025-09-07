@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,6 +26,15 @@
   <!-- Favicon -->
   <link rel="icon" href="logo-brain.png" />
   <meta name="description" content="We make AI simple, safe, and useful for everyday New Zealanders, business owners, and professionals." />
+
+  <!-- Google Analytics 4 (replace G-XXXXXXX with your ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 </head>
 <body class="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 text-[var(--lw-gray-900)]">
   <!-- Sticky promo bar -->
@@ -55,7 +65,7 @@
 
     <div class="mt-8">
       <!-- Join Waitlist button (Primary Indigo) -->
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header" 
+      <a id="cta-waitlist-hero" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header" 
          target="_blank" 
          rel="noopener" 
          class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
@@ -156,7 +166,7 @@
     </div>
 
     <div class="mt-10 text-center">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+      <a id="cta-waitlist-about" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
          target="_blank" rel="noopener"
          class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
          style="background-color:#4F46E5">
@@ -199,7 +209,7 @@
       </div>
 
       <div class="mt-10 text-center">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+        <a id="cta-waitlist-testimonials" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
            target="_blank" rel="noopener"
            class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
            style="background-color:#10B981">
@@ -246,7 +256,7 @@
     </div>
 
     <div class="mt-10 text-center">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+      <a id="cta-waitlist-faq" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
          target="_blank" rel="noopener"
          class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
          style="background-color: var(--lw-indigo-600)">
@@ -276,7 +286,7 @@
             <li>Email support</li>
           </ul>
           <div class="mt-6">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+            <a id="cta-waitlist-pricing-solo" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
                target="_blank" rel="noopener"
                class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg shadow text-white"
                style="background-color: var(--lw-indigo-600)">
@@ -300,7 +310,7 @@
             <li>Priority email support</li>
           </ul>
           <div class="mt-6">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+            <a id="cta-waitlist-pricing-team" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
                target="_blank" rel="noopener"
                class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg shadow text-white"
                style="background-color: var(--lw-emerald-500)">
@@ -321,7 +331,7 @@
             <li>Follow-up templates & support</li>
           </ul>
           <div class="mt-6">
-            <a href="mailto:yourgmail@gmail.com"
+            <a id="cta-waitlist-pricing-onsite" href="mailto:yourgmail@gmail.com"
                class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg shadow text-white"
                style="background-color: var(--lw-indigo-600)">
               Enquire
@@ -342,6 +352,19 @@
     <p class="mt-3 text-xs text-gray-500">
       Questions? <a href="mailto:yourgmail@gmail.com" class="underline">Email us</a>.
     </p>
+    <p class="mt-2 text-xs text-gray-500">
+      <a href="/privacy.html" class="underline">Privacy</a> ·
+      <a href="/terms.html" class="underline">Terms</a>
+    </p>
   </footer>
+
+  <!-- Click tracking for GA4 -->
+  <script>
+    document.querySelectorAll('a[href*="docs.google.com/forms"]').forEach(el=>{
+      el.addEventListener('click', ()=> {
+        if (typeof gtag === 'function') gtag('event','waitlist_click',{id: el.id || 'cta', path: window.location.pathname});
+      });
+    });
+  </script>
 </body>
 </html>
