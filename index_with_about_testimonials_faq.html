@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Logic Wart — AI for Everybody</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts: Inter (headings) + Source Sans Pro (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lw-indigo-600:#4F46E5; /* Primary */
+      --lw-emerald-500:#10B981; /* Secondary */
+      --lw-amber-400:#FBBF24; /* Accent */
+      --lw-gray-900:#111827;
+      --lw-gray-500:#6B7280;
+      --lw-gray-100:#F3F4F6;
+    }
+    body{ font-family: 'Source Sans 3', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    h1,h2,h3{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    details > summary { cursor: pointer; }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" href="logo-brain.png" />
+  <meta name="description" content="We make AI simple, safe, and useful for everyday New Zealanders, business owners, and professionals." />
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 text-[var(--lw-gray-900)]">
+  <!-- Top strip with subtle accent -->
+  <div class="w-full h-1 bg-[var(--lw-emerald-500)]"></div>
+
+  <header class="max-w-5xl mx-auto px-6 pt-14 pb-10 text-center">
+    <img src="logo-text.png" alt="Logicwart Logo" class="mx-auto w-40 mb-6" />
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">AI for Everybody</h1>
+    <p class="mt-3 text-xl text-gray-700">From boardroom to back shed — practical AI you can use today.</p>
+    <p class="mt-5 max-w-2xl mx-auto text-gray-600">
+      We make AI simple, safe, and useful for everyday New Zealanders, business owners, and professionals.
+    </p>
+
+    <div class="mt-8">
+      <!-- Join Waitlist button (Primary Indigo) -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header" 
+         target="_blank" 
+         rel="noopener" 
+         class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
+         style="background-color: var(--lw-indigo-600)">
+        Join Waitlist
+      </a>
+      <p class="mt-2 text-xs text-gray-500">We’ll only use your email to contact you about Logicwart. Unsubscribe anytime.</p>
+    </div>
+  </header>
+
+  <!-- Trust / logos row placeholder -->
+  <section class="px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 items-center text-center text-gray-400">
+      <div class="h-10 bg-gray-200/60 rounded-xl"></div>
+      <div class="h-10 bg-gray-200/60 rounded-xl"></div>
+      <div class="h-10 bg-gray-200/60 rounded-xl"></div>
+      <div class="h-10 bg-gray-200/60 rounded-xl"></div>
+    </div>
+  </section>
+
+  <!-- Benefits cards -->
+  <section class="max-w-5xl mx-auto px-6 py-14">
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <div class="text-3xl" aria-hidden>✨</div>
+        <h3 class="mt-3 text-lg font-semibold">Simple</h3>
+        <p class="mt-1 text-sm text-gray-600">No jargon. Short, guided sessions with take‑home cheat sheets.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <div class="text-3xl" aria-hidden>🛡️</div>
+        <h3 class="mt-3 text-lg font-semibold">Safe</h3>
+        <p class="mt-1 text-sm text-gray-600">Clear guardrails for privacy, scams, and responsible AI use.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <div class="text-3xl" aria-hidden>🛠️</div>
+        <h3 class="mt-3 text-lg font-semibold">Practical</h3>
+        <p class="mt-1 text-sm text-gray-600">Real SME tasks: admin, marketing, customer replies, quotes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-white/70">
+    <div class="max-w-5xl mx-auto px-6 py-14">
+      <h2 class="text-2xl font-bold text-center">How it works</h2>
+      <div class="mt-8 grid sm:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-gray-200 p-6 bg-white">
+          <div class="text-2xl" aria-hidden>1️⃣</div>
+          <h3 class="mt-2 font-semibold">Join the waitlist</h3>
+          <p class="mt-1 text-sm text-gray-600">We’ll invite you to the pilot with simple step‑by‑step onboarding.</p>
+        </div>
+        <div class="rounded-2xl border border-gray-200 p-6 bg-white">
+          <div class="text-2xl" aria-hidden>2️⃣</div>
+          <h3 class="mt-2 font-semibold">Learn by doing</h3>
+          <p class="mt-1 text-sm text-gray-600">Short interactive sessions show exactly how to use AI on your tasks.</p>
+        </div>
+        <div class="rounded-2xl border border-gray-200 p-6 bg-white">
+          <div class="text-2xl" aria-hidden>3️⃣</div>
+          <h3 class="mt-2 font-semibold">Put it to work</h3>
+          <p class="mt-1 text-sm text-gray-600">Walk away with templates, workflows, and confidence to use AI today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center">About Logicwart</h2>
+    <p class="mt-6 text-lg text-gray-700 text-center">
+      Logicwart helps everyday New Zealanders and small business owners use AI
+      safely and practically — without jargon or tech overwhelm.
+    </p>
+
+    <div class="mt-8 grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <h3 class="font-semibold">Who we help</h3>
+        <p class="mt-2 text-sm text-gray-600">
+          Owners, managers, tradies, and professionals who want results — not
+          buzzwords. If you use email, quotes, invoices, or marketing, we’re for you.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <h3 class="font-semibold">What we teach</h3>
+        <p class="mt-2 text-sm text-gray-600">
+          Short, guided sessions that show exactly how to use AI for admin,
+          customer replies, marketing, and everyday workflows.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <h3 class="font-semibold">How it works</h3>
+        <p class="mt-2 text-sm text-gray-600">
+          Learn‑by‑doing with simple prompts, templates, and safety guardrails.
+          You leave with tools you can use the same day.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
+         style="background-color:#4F46E5">
+        Join the Waitlist
+      </a>
+      <p class="mt-2 text-xs text-gray-500">Be first to hear about the pilot and early training dates.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials section -->
+  <section class="bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center">What People Are Saying</h2>
+      <p class="mt-4 text-lg text-gray-600 text-center">
+        Early users and partners on how Logicwart is making AI simple and useful.
+      </p>
+
+      <div class="mt-10 grid gap-8 sm:grid-cols-2">
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <p class="text-gray-700">
+            “I never thought I’d be using AI for my small plumbing business, but
+            Logicwart showed me how to save hours on quotes and emails.”
+          </p>
+          <div class="mt-4">
+            <p class="font-semibold">John M.</p>
+            <p class="text-sm text-gray-500">Small Business Owner</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6">
+          <p class="text-gray-700">
+            “Straightforward, practical, and no jargon. I finally feel confident
+            using AI in my day-to-day work.”
+          </p>
+          <div class="mt-4">
+            <p class="font-semibold">Sarah K.</p>
+            <p class="text-sm text-gray-500">Professional Services</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
+           style="background-color:#10B981">
+          Join the Waitlist
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ section -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center">FAQ</h2>
+    <div class="mt-8 grid gap-4">
+      <details class="bg-white rounded-2xl shadow-sm p-5">
+        <summary class="font-semibold">Do I need to be technical to join?</summary>
+        <p class="mt-3 text-sm text-gray-600">
+          Nope. We avoid jargon and teach with simple, hands-on examples. If you can use email, you can do this.
+        </p>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm p-5">
+        <summary class="font-semibold">What do I need to bring?</summary>
+        <p class="mt-3 text-sm text-gray-600">
+          Just a laptop or tablet. We’ll provide templates, prompts, and step-by-step guides.
+        </p>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm p-5">
+        <summary class="font-semibold">How long are the sessions?</summary>
+        <p class="mt-3 text-sm text-gray-600">
+          The pilot runs in short modules (45–60 minutes each) you can do at your own pace.
+        </p>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm p-5">
+        <summary class="font-semibold">Is my data safe?</summary>
+        <p class="mt-3 text-sm text-gray-600">
+          We share clear safety practices and tools to protect your information. You stay in control of what you share.
+        </p>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm p-5">
+        <summary class="font-semibold">What does it cost?</summary>
+        <p class="mt-3 text-sm text-gray-600">
+          The pilot pricing will be announced to the waitlist first, with discounted early seats.
+        </p>
+      </details>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
+         style="background-color: var(--lw-indigo-600)">
+        Join the Waitlist
+      </a>
+    </div>
+  </section>
+
+  <footer class="max-w-5xl mx-auto px-6 py-12 text-center">
+    <p class="text-xs text-gray-500">Logic Wart © 2025 • Made in New Zealand</p>
+    <p class="mt-2 text-xs" style="color: var(--lw-amber-400)">AI for Everybody — From boardroom to back shed.</p>
+    <p class="mt-3 text-xs text-gray-500">
+      Questions? <a href="mailto:yourgmail@gmail.com" class="underline">Email us</a>.
+    </p>
+  </footer>
+</body>
+</html>
