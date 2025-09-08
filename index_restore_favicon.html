@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Logic Wart — AI for Everybody</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="We make AI simple, safe, and useful for everyday New Zealanders, business owners, and professionals." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lw-indigo-600:#4F46E5;
+      --lw-emerald-500:#10B981;
+      --lw-amber-400:#FBBF24;
+      --lw-gray-900:#111827;
+      --lw-gray-600:#4B5563;
+      --lw-gray-100:#F3F4F6;
+    }
+    body{ font-family: 'Source Sans 3', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    h1,h2,h3{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    details > summary { cursor: pointer; }
+  </style>
+
+  <!-- Google Analytics 4 (replace G-XXXXXXX with your ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 text-[var(--lw-gray-900)]">
+  <!-- Sticky promo bar -->
+  <div id="promo" class="fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto max-w-6xl">
+      <div class="m-2 rounded-xl shadow bg-[var(--lw-indigo-600)] text-white px-4 py-2 flex items-center justify-between gap-3">
+        <p class="text-sm sm:text-base">
+          <strong>Early‑bird pilot seats</strong> now open — limited spots.
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header"
+             target="_blank" rel="noopener"
+             class="underline font-semibold ml-1">Join the waitlist</a>
+        </p>
+        <button aria-label="Close announcement" class="shrink-0 rounded-lg px-2 py-1 bg-white/15 hover:bg-white/25" onclick="document.getElementById('promo').style.display='none'">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer for sticky bar -->
+  <div class="w-full h-1 bg-[var(--lw-emerald-500)] mt-10 sm:mt-12"></div>
+
+  <!-- HERO -->
+  <header class="max-w-5xl mx-auto px-6 pt-12 pb-10 text-center">
+    <img src="logo1.png" alt="Logicwart logo" class="mx-auto w-28 mb-6" />
+    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">AI for Everybody</h1>
+    <p class="mt-3 text-xl text-gray-700">From boardroom to back shed — practical AI you can use today.</p>
+    <p class="mt-5 max-w-2xl mx-auto text-gray-600">
+      We make AI simple, safe, and useful for everyday New Zealanders, business owners, and professionals.
+    </p>
+
+    <div class="mt-8">
+      <a id="cta-waitlist-hero" href="https://docs.google.com/forms/d/e/1FAIpQLSdzmL6NA0-QrKFMTzFCQaBm6JxcKqMFIk3teplsVehbtZ0W5Q/viewform?usp=header" 
+         target="_blank" rel="noopener" 
+         class="inline-flex items-center justify-center px-6 py-3 rounded-xl shadow text-white"
+         style="background-color: var(--lw-indigo-600)">
+        Join Waitlist
+      </a>
+      <p class="mt-2 text-xs text-gray-500">We’ll only use your email to contact you about Logicwart. Unsubscribe anytime.</p>
+    </div>
+  </header>
+
+  <!-- Feature cards (the grey boxes you asked about—kept but populated) -->
+  <section class="max-w-5xl mx-auto px-6 pb-6">
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <div class="text-3xl" aria-hidden>✨</div>
+        <h3 class="mt-3 text-lg font-semibold">Simple</h3>
+        <p class="mt-1 text-sm text-gray-600">No jargon. Short, guided sessions with take‑home cheat sheets.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <div class="text-3xl" aria-hidden>🛡️</div>
+        <h3 class="mt-3 text-lg font-semibold">Safe</h3>
+        <p class="mt-1 text-sm text-gray-600">Clear guardrails for privacy, scams, and responsible AI use.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm p-6">
+        <div class="text-3xl" aria-hidden>🛠️</div>
+        <h3 class="mt-3 text-lg font-semibold">Practical</h3>
+        <p class="mt-1 text-sm text-gray-600">Real SME tasks: admin, marketing, customer replies, quotes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results band -->
+  <section class="max-w-5xl mx-auto px-6">
+    <div class="rounded-2xl bg-white shadow-sm p-6 text-center">
+      <h3 class="text-xl font-semibold">📈 Results</h3>
+      <p class="mt-2 text-gray-600">Time back every week. Focus on what actually matters.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center">About Logicwart</h2>
+    <p class="mt-6 text-lg text-gray-700 text-center">
+      Logicwart helps everyday New Zealanders and small business owners use AI
+      safely and practically — without jargon or tech overwhelm.
+    </p>
+  </section>
+
+  <!-- Pricing -->
+  <section class="bg-white/70">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center">Pilot Seats & Pricing</h2>
+      <p class="mt-4 text-lg text-gray-600 text-center">
+        Limited early-bird seats for the pilot. Join the waitlist to be first in line.
+      </p>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-3">
+        <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-200">
+          <h3 class="text-lg font-semibold">Solo</h3>
+          <div class="mt-3 text-3xl font-bold">NZ$149</div>
+          <ul class="mt-4 text-sm text-gray-600 list-disc pl-5 space-y-1">
+            <li>All core modules</li>
+            <li>Cheat sheets & templates</li>
+            <li>Email support</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm p-6 border-2" style="border-color: var(--lw-emerald-500)">
+          <div class="inline-flex items-center gap-2 text-xs font-medium px-2 py-1 rounded-full" style="background-color: var(--lw-emerald-500); color: white;">
+            Most Popular
+          </div>
+          <h3 class="mt-3 text-lg font-semibold">Team (up to 5)</h3>
+          <div class="mt-3 text-3xl font-bold">NZ$399</div>
+          <ul class="mt-4 text-sm text-gray-600 list-disc pl-5 space-y-1">
+            <li>All core modules</li>
+            <li>SME workflow templates</li>
+            <li>Priority email support</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-200">
+          <h3 class="text-lg font-semibold">Onsite Workshop</h3>
+          <div class="mt-3 text-3xl font-bold">From NZ$1,490</div>
+          <ul class="mt-4 text-sm text-gray-600 list-disc pl-5 space-y-1">
+            <li>Tailored modules</li>
+            <li>Hands-on with your real tasks</li>
+            <li>Follow-up templates & support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="max-w-5xl mx-auto px-6 py-12 text-center">
+    <p class="text-xs text-gray-500">Logic Wart © 2025 • Made in New Zealand</p>
+    <p class="mt-2 text-xs" style="color: var(--lw-amber-400)">AI for Everybody — From boardroom to back shed.</p>
+    <p class="mt-3 text-xs text-gray-500">
+      Questions? <a href="mailto:yourgmail@gmail.com" class="underline">Email us</a>.
+    </p>
+    <p class="mt-2 text-xs text-gray-500">
+      <a href="/privacy.html" class="underline">Privacy</a> ·
+      <a href="/terms.html" class="underline">Terms</a>
+    </p>
+  </footer>
+
+  <!-- Click tracking -->
+  <script>
+    document.querySelectorAll('a[href*="docs.google.com/forms"]').forEach(el=>{
+      el.addEventListener('click', ()=> {
+        if (typeof gtag === 'function') gtag('event','waitlist_click',{id: el.id || 'cta', path: window.location.pathname});
+      });
+    });
+  </script>
+</body>
+</html>
